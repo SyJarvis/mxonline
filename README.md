@@ -41,3 +41,8 @@ https://github.com/derek-zhang123/MxOnline
 
 xadmin是基于djangoadmin开发的
 xadmin会在app目录搜索adminx.py文件进行注册
+
+``
+https://github.com/mbi/django-simple-captcha
+django验证码
+https://django-simple-captcha.readthedocs.io/en/latest/

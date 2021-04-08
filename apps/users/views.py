@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.views.generic.base import View
 from django.contrib.auth.backends import ModelBackend
 from .models import UserProfile
-from .forms import LoginForm
+from .forms import LoginForm, RegisterForm
 # Create your views here.
 
 
@@ -62,3 +62,29 @@ class LoginView(View):
         else:
             print("login error")
             return render(request, 'login.html', {"login_form": login_form})
+
+
+class RegisterView(View):
+    def get(self, request):
+        register_form = RegisterForm()
+        return render(request, "register.html", {'register_form': register_form})
+
+    def post(self, request):
+        register_form = RegisterForm(request.POST)
+        if register_form.is_valid():
+            pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
