@@ -20,5 +20,22 @@ auth.User.groups: (fields.E304) Reverse accessor for 'User.groups' clashes with 
 ### User表指定 app名.模型类名
 AUTH_USER_MODEL = "users.UserProfile"
 
-
 TemplateDoesNotExist at /index.html
+
+
+
+
+
+错误
+
+```
+ValueError at /register
+The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+```
+
+就是没有httpresponse返回
+
+render
+
+HttpResponse
+
